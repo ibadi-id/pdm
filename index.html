@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monst - Tailwind CSS Saas Landing Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Tailwind CSS Saas Landing Page" />
+    <meta name="author" content="alithemes.com" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/logos/favicon.svg" />
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css?v=2.0" />
+    <link rel="stylesheet" href="assets/css/slick.css?v=2.0" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind-built.css?v=2.0" />
+</head>
+
+<body class="bg-white text-body font-body">
+    <div class="main">
+        <!--Header-->
+        <header class="bg-transparent sticky-bar mt-4">
+            <div class="container bg-transparent">
+                <!-- NAVIGATION MENU -->
+                <nav class="bg-transparent flex justify-between items-center py-3">
+                    <a class="text-3xl font-semibold leading-none" href="index.html">
+                        <img class="h-10" src="assets/imgs/logos/pdm-logo.svg" alt="" />
+                    </a>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                        <li class="group relative pt-4 pb-4">
+                            <a href="#home"
+                                class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">Home</a>
+                        </li>
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="#aboutus">About Us</a>
+                        </li>
+                        <li class="pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="#services">Services</a>
+                        </li>
+                        <li class="group relative pt-4 pb-4">
+                            <a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="#company">Company</a>
+                        </li>
+                        <li class="pt-4 pb-4"><a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                                href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="lg:hidden">
+                        <button
+                            class="navbar-burger flex items-center py-2 px-3 text-green-500 hover:text-green-700 rounded border border-green-200 hover:border-green-300">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--Mobile menu-->
+        <div class="hidden navbar-menu relative z-50 transition duration-300">
+            <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+                        <img class="h-10" src="assets/imgs/logos/pdm-logo.svg" alt="" />
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-green-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul class="mobile-menu">
+                        <li class="mb-1 menu-item-has-children rounded-xl">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500 rounded-xl"
+                                href="#">Home</a>
+                            <ul class="dropdown pl-5">
+                                <li>
+                                    <a class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                        href="index.html">Home 1</a>
+                                </li>
+                                <li>
+                                    <a class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                        href="index-2.html">Home 2</a>
+                                </li>
+                                <li>
+                                    <a class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                        href="index-3.html">Home 3</a>
+                                </li>
+                                <li>
+                                    <a class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                        href="index-4.html">Home 4</a>
+                                </li>
+                                <li>
+                                    <a class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                        href="index-5.html">Home 5</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mb-1 rounded-xl">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500 rounded-xl"
+                                href="about.html">About Us</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="services.html">Services</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="team.html">Team</a>
+                        </li>
+                        <li class="mb-1 menu-item-has-children rounded-xl">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="team.html">Blog</a>
+                            <ul class="dropdown pl-5">
+                                <li>
+                                    <a href="blog.html"
+                                        class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500">Category
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="blog-2.html"
+                                        class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500">Category
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="blog-single.html"
+                                        class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500">Single
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="blog-single-2.html"
+                                        class="block p-3 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500">Single
+                                        2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="faqs.html">Faqs</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="testimonials.html">Testimonial</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm text-blueGray-500 hover:bg-green-50 hover:text-green-500"
+                                href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="mt-4 pt-6 border-t border-blueGray-100">
+                        <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-green-400 hover:bg-green-500 text-white rounded"
+                            href="#">Sign Up</a>
+                        <a class="block px-4 py-3 mb-2 text-xs text-center text-green-500 hover:text-green-700 font-semibold leading-none border border-green-200 hover:border-green-300 rounded"
+                            href="#">Log In</a>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <p class="my-4 text-xs text-blueGray-400">
+                        <span>Get in Touch</span>
+                        <a class="text-green-500 hover:text-green-500 underline" href="#">contact@monst.com</a>
+                    </p>
+                    <a class="inline-block px-1" href="#">
+                        <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
+                    </a>
+                    <a class="inline-block px-1" href="#">
+                        <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
+                    </a>
+                    <a class="inline-block px-1" href="#">
+                        <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!--Hero-->
+        <section id="home" class="relative -mt-24 pt-24">
+            <div class="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0" style="z-index: -1"></div>
+            <div class="container">
+                <div class="flex flex-wrap items-center -mx-3">
+                    <div class="w-full lg:w-1/2 px-3">
+                        <div class="py-12">
+                            <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+                                <h2
+                                    class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
+                                    <span class="text-green-500">prestasi</span> daya mulia, <br />committed to the
+                                    future
+                                </h2>
+                                <p class="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">We
+                                    are <strong class="text-green-500">pdm</strong>, a leading supplier <span
+                                        class="typewrite d-inline text-green-500" data-period="3000"
+                                        data-type='["banana leaves", "agricultural products" ]'></span></p>
+                                <p
+                                    class="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn mt-3 text-sm">
+                                    Helping you get superior agricultural products at lower prices</p>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <a class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-green-400 hover:bg-green-500 rounded wow animate__animated animate__fadeInUp"
+                                    href="#key-features">Key Features</a>
+                                <a class="block hover-up-2 sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animated animate__fadeInUp"
+                                    data-wow-delay=".3s" href="#how-we-work">How We Work?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-3 lg:bg-blueGray-10 mb-12 lg:mb-0 pb-10">
+                        <div class="flex items-center justify-center">
+                            <img class="lg:max-w-lg rounded-xl" src="assets/imgs/illustrations/hero.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE -->
+        <section id="aboutus" class="pt-16 pb-20" id="key-features">
+            <div class="container">
+                <div class="flex flex-wrap items-center mb-12">
+                    <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+                        <h2 class="text-4xl font-bold font-heading wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".1s">
+                            <span>Elevate </span>
+                            <br />
+                            <span class="text-green-600">Your Experiences </span>
+                            <br />
+                            <span>with Premium<br />
+                                Indonesian <br /> <span class="text-green-600"> Banana Leaves </span>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <p class="lg:pl-16 text-blueGray-400 leading-loose wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".4s">Prestasi Daya Mulia, established in 2003, is a reputable agricultural
+                            company specializing in the cultivation and distribution of high-quality banana leaves. With
+                            over two decades of experience, we have become a trusted name in the industry, committed to
+                            delivering premium banana leaves to a diverse range of customers.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 -mb-6">
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg  class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6.072 10.072 2 2 6-4m3.586 4.314.9-.9a2 2 0 0 0 0-2.828l-.9-.9a2 2 0 0 1-.586-1.414V5.072a2 2 0 0 0-2-2H13.8a2 2 0 0 1-1.414-.586l-.9-.9a2 2 0 0 0-2.828 0l-.9.9a2 2 0 0 1-1.414.586H5.072a2 2 0 0 0-2 2v1.272a2 2 0 0 1-.586 1.414l-.9.9a2 2 0 0 0 0 2.828l.9.9a2 2 0 0 1 .586 1.414v1.272a2 2 0 0 0 2 2h1.272a2 2 0 0 1 1.414.586l.9.9a2 2 0 0 0 2.828 0l.9-.9a2 2 0 0 1 1.414-.586h1.272a2 2 0 0 0 2-2V13.8a2 2 0 0 1 .586-1.414Z"/>
+                                  </svg>
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Export-Quality Assurance</h3>
+                            <p class="text-sm text-blueGray-400">Meticulously Harvested and Freshly Packed Banana Leaves
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".5s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 11C15 13.038 12.761 15.5 10 15.5C7.239 15.5 5 13.038 5 11C5 12.444 15 12.444 15 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.06117 6.89466C7.05247 6.91839 7.04467 6.94243 7.03778 6.96675C7.0126 6.9658 6.9874 6.9658 6.96222 6.96675C6.95534 6.94243 6.94753 6.91839 6.93883 6.89466C6.95977 6.88062 6.98018 6.86579 7 6.85021C7.01982 6.86579 7.04023 6.88062 7.06117 6.89466ZM12.9622 6.96675C12.9553 6.94243 12.9475 6.91839 12.9388 6.89466C12.9598 6.88062 12.9802 6.86579 13 6.85021C13.0198 6.86579 13.0402 6.88062 13.0612 6.89466C13.0525 6.91839 13.0447 6.94243 13.0378 6.96675C13.0126 6.9658 12.9874 6.9658 12.9622 6.96675Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Eco-Friendly Export</h3>
+                            <p class="text-sm text-blueGray-400">Sustainable Farming Practices for Global Green
+                                Solutions</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".7s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3h4M8 17h4m-9-5V8m14 4V8M1 1h4v4H1V1Zm14 0h4v4h-4V1ZM1 15h4v4H1v-4Zm14 0h4v4h-4v-4Z"/>
+                                  </svg>
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">International Versatility</h3>
+                            <p class="text-sm text-blueGray-400">Perfect for Culinary, Events, and Cultural Celebrations
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".9s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13v3m3-3v3M7 7H4m3-3H4m3 6H4m6 3v3m8-3H7V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v17h17a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1Z"/>
+                                  </svg>
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Cutting-Edge Export</h3>
+                            <p class="text-sm text-blueGray-400"> Innovative Approaches for Superior International
+                                Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="py-12 md:py-20">
+            <div id="services" class="container px-4 mx-auto">
+                <div class="flex flex-wrap -mx-3">
+                    <div class="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
+                        <div class="max-w-md lg:max-w-xs lg:pr-16 mx-auto lg:ml-0 mb-6 lg:mb-0">
+                            <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeInUp"
+                                data-wow-delay=".3s">Banana Leaves More Than Just <span
+                                    class="text-green-500">Greenery</span></h2>
+                            <p class="text-xs md:text-base text-blueGray-400 leading-loose wow animate__animated animate__fadeInUp"
+                                data-wow-delay=".9s">Indonesian Banana Leaves <br> A Global Standard</p>
+                        </div>
+                        <div class="lg:absolute lg:bottom-0 lg:left-0 flex justify-center">
+                            <div id="carausel-2-columns-1-arrows" class="flex"></div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3 flex flex-wrap">
+                        <div class="relative w-full">
+                            <div class="carausel-2-columns slick-carausel" id="carausel-2-columns-1">
+                                <div class="px-3 pb-5">
+                                    <div class="card-slider group">
+                                        <img class="rounded-xl" src="assets/imgs/placeholders/product-1.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="px-3 pb-5">
+                                    <div class="card-slider group">
+                                        <img class="rounded-xl" src="assets/imgs/placeholders/product-2.jpeg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="px-3 pb-5">
+                                    <div class="card-slider group">
+                                        <img class="rounded-xl" src="assets/imgs/placeholders/product-5.jpeg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="px-3 pb-5">
+                                    <div class="card-slider group">
+                                        <img class="rounded-xl" src="assets/imgs/placeholders/product-6.jpeg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY US -->
+        <section id="company" class="py-20 xl:bg-contain bg-top bg-no-repeat"
+            style="background-image: url('assets/imgs/backgrounds/intersect.svg')" id="key-features">
+            <div class="container">
+                <div class="max-w-lg mx-auto mb-12 text-center">
+                    <h2 class="my-2 text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".1s">
+                        Why Choose <br />
+                        <span class="text-green-500">prestasi daya mulia</span> ?
+                    </h2>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.994 19a8.999 8.999 0 1 1 3.53-17.281M5.995 9l4 4 7-8m-1 8v5m-2.5-2.5h5"/>
+                                  </svg>  
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">20 Years of Expertise</h3>
+                            <p class="text-sm text-blueGray-400">Trust a Legacy of Agricultural Excellence.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".5s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 2 3 5-5M9 19A18.55 18.55 0 0 1 1 4l8-3 8 3a18.549 18.549 0 0 1-8 15Z"/>
+                                  </svg>
+                                  
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Uncompromised Quality</h3>
+                            <p class="text-sm text-blueGray-400">From Farm to Table, We Ensure Perfection.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".7s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
+                                  </svg>
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Reliable Supply Chain</h3>
+                            <p class="text-sm text-blueGray-400">Timely Delivery, <br> Every Time.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                        <div class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".9s">
+                            <div class="text-green-500 mx-auto mb-4">
+                                <svg class="w-8 h-8 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.333 6.764a3 3 0 1 1 3.141-5.023M2.5 16H1v-2a4 4 0 0 1 4-4m7.379-8.121a3 3 0 1 1 2.976 5M15 10a4 4 0 0 1 4 4v2h-1.761M13 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-4 6h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z"/>
+                                  </svg>
+                            </div>
+                            <h3 class="mb-2 font-bold font-heading">Community Support</h3>
+                            <p class="text-sm text-blueGray-400">Empowering Local Communities in Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT US -->
+        <section id="contact" class="py-20 bg-top bg-no-repeat"
+            style="background-image: url('assets/imgs/elements/blob.svg')">
+            <div class="container px-4 mx-auto">
+                <div class="relative py-20 px-4 lg:p-20">
+                    <div class="max-w-lg mx-auto text-center">
+                        <h2
+                            class="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__animated animate__fadeInUp">
+                            <span>Ready to Experience the Freshness?</span>
+                            <span>Order Your <span class="text-green-500">Banana Leaves </span> Today!</span>
+                        </h2>
+                        <p class="mb-8 text-blueGray-400 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                            All your information is completely confidential</p>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=628126614535&amp;text=Hi!%20I%20would%20like%20to%20ask%20about%20banana%20leaves.">
+                            <button
+                                class="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-green-400 hover:bg-green-500 rounded">Chat
+                                via Whatsapp</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer 2-->
+
+        <section class="py-20">
+            <div class="container px-4 mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
+                    <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0">
+                        <a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="index.html">
+                            <img class="h-10" src="assets/imgs/logos/pdm-logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
+                        <p
+                            class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
+                            Helping you <strong>get superior</strong> agricultural products at lower prices</p>
+                    </div>
+
+                    <div class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p>
+                        <p class="lg:text-lg text-blueGray-400">Padang Pasir X no 7, West Sumatera, Indonesia</p>
+                    </div>
+                    <div class="w-full lg:w-1/5 px-3">
+                        <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contacts</p>
+                        <p class="lg:text-lg text-blueGray-400">(+62) 812-6614-535 </p> <br>
+                        <a href="mailto:info@prestasidayamulia.com">
+                            <button
+                                class="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-green-400 hover:bg-green-500 rounded">
+                                Email Us</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+                    <p class="text-sm text-blueGray-400">&copy; 2021. All rights reserved. <a class="text-blue-400"
+                            href="https://prestasidayamulia.com" target="_blank">prestasidayamulia.com</a></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- End .main -->
+
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader flex-1 content-center">
+            <div class="logo absolute inset-y-2/4 jump">
+                <img src="assets/imgs/logos/pdm-logo.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    <!--Import Vendor Js-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/vendor/counterup.js"></script>
+    <script src="assets/js/vendor/slick.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/scrollup.js"></script>
+    <script src="assets/js/vendor/smooth.js"></script>
+    <script src="assets/js/vendor/textType.js"></script>
+    <script src="assets/js/vendor/mobile-menu.js"></script>
+    <script src="assets/js/main.js?v=2.0"></script>
+</body>
+
+</html>
